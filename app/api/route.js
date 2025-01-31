@@ -79,13 +79,14 @@ async function runLlama({
   console.log("running llama");
   console.log("model", model);
   console.log("maxTokens", maxTokens);
+  console.log(prompt)
 
   return await replicate.predictions.create({
     model: model,
     stream: true,
     input: {
       system_prompt:
-        "You are a helpful assistant specializing in fake news detection. Task: Provide your own classification of this news article (authentic or fake), with a brief explanation (in Bangla or English).",
+        "You are a helpful assistant specializing in Bangla fake news detection. Below is a Bangla news article along with two authenticity assessments (NLP assesment & blockchain evalators assesment). Tasks: 1. Provide your own classification of this news article (authentic or fake), with a brief explanation (in Bangla or English). 2. If there is a discrepancy between the two existing scores, explain possible reasons for their disagreement. 3. If they agree, summarize why they might have come to the same conclusion.",
       prompt: `${prompt}`,
       max_new_tokens: maxTokens,
       ...(model.includes("llama3")

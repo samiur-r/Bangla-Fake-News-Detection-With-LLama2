@@ -5,12 +5,12 @@ export default function CallToAction() {
   return (
     <div
       className="guide-footer-cta sm:flex items-center bg-pink-600 justify-between p-12 space-y-4"
-      style={{
-        background: `url(${CTAGooBG.src}) no-repeat center center`,
-        backgroundSize: "cover",
-        position: "relative",
-        zIndex: 1,
-      }}
+    // style={{
+    //   background: `url(${CTAGooBG.src}) no-repeat center center`,
+    //   backgroundSize: "cover",
+    //   position: "relative",
+    //   zIndex: 1,
+    // }}
     >
       <div>
         <h1 className="text-2xl sm:text-3xl text-white font-bold">

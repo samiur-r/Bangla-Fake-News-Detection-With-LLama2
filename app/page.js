@@ -145,7 +145,7 @@ export default function HomePage() {
   //   Llama params
   const [model, setModel] = useState(MODELS[0]); // default to 8B
   const [systemPrompt, setSystemPrompt] = useState(
-    "You are a helpful assistant."
+    "You are a helpful assistant specializing in Bangla fake news detection"
   );
   const [temp, setTemp] = useState(0.75);
   const [topP, setTopP] = useState(0.9);
@@ -250,8 +250,6 @@ export default function HomePage() {
       systemPrompt,
       messageHistory
     )}\n`;
-
-    console.log(prompt);
 
     // Check if we exceed max tokens and truncate the message history if so.
     while (countTokens(prompt) > MAX_TOKENS) {
