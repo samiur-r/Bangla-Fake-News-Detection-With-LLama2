@@ -4,7 +4,7 @@ This project aims to provide accurate fake news detection for the Bangla languag
 
 ## Features
 
-- **Sentiment Analysis**: Detect and classify news (authentic, fake) in Banglish text using Llama 2.
+- **News Analysis**: Detect and classify news (authentic, fake) in Banglish text using Llama 2.
 - **NextJS Integration**: Seamless integration with NextJS, allowing for easy deployment and use in web applications.
 - **RESTful API**: Expose sentiment analysis functionality through a RESTful API for easy integration with other applications.
 - **User-friendly Interface**: A simple and intuitive user interface for testing and demonstrating the sentiment analysis capabilities.
